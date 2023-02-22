@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="619.0" spacing="20.0" style="-fx-background-color: #13141B;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.metohu.wordle.MenuController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="279.0">
+         <children>
+            <Label text="W" textFill="#87b65e">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="10.0" text="O" textFill="#ebc454">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="10.0" text="R" textFill="#87b65e">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="239.0" layoutY="10.0" text="D" textFill="#87b65e">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="252.0" layoutY="10.0" text="L" textFill="#ebc454">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="10.0" text="E" textFill="#ebc454">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="252.0" layoutY="10.0" text="!" textFill="#87b65e">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="56.0" prefWidth="279.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="18.0" prefWidth="279.0">
+               <children>
+                  <Label fx:id="lblResult" text="HAI PERSO!" textFill="#f7f5f2" underline="true">
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="14.0" prefWidth="279.0">
+               <children>
+                  <Label text="LA PAROLA ERA:" textFill="#f7f5f2" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="18.0" prefWidth="279.0">
+               <children>
+                  <Label fx:id="lblParola" text="PAROLA" textFill="#f7f5f2" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnStart" mnemonicParsing="false" onAction="#onStartEnding" prefHeight="74.0" prefWidth="117.0" style="-fx-background-color: #65677E;" text="NUOVA PARTITA" textFill="#f7f5f2" />
+      <Button fx:id="btnExit" mnemonicParsing="false" onAction="#onExitEnding" prefHeight="74.0" prefWidth="117.0" style="-fx-background-color: #65677E;" text="ESCI" textFill="#f7f5f2" />
+   </children>
+</VBox>
